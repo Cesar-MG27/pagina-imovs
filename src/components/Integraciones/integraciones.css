@@ -1,0 +1,233 @@
+.integrations {
+  background: #e5dcff;
+  height: max-content;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 6em 2% 7em 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.integrations .title,
+.integrations .description {
+  max-width: 800px;
+  text-align: center;
+}
+
+.illustration {
+  width: 80%;
+  position: relative;
+  transform: translateX(-22px);
+  /* overflow: hidden; */
+}
+
+.illustration svg {
+  width: 100%;
+  object-fit: cover;
+  overflow: visible;
+}
+
+.iphone {
+  width: 24%;
+  height: auto;
+  position: absolute;
+  left: calc(50% + 20px);
+  transform: translateX(-50%);
+  top: 27%;
+  object-fit: cover;
+}
+
+.integration__info{
+  position: relative;
+  z-index: 1;
+  margin-top: 5em;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.integration__info .info_group{
+  width: 400px;
+  padding: 50px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid #cdc7ec
+  /* backdrop-filter: blur(10px); */
+}
+
+.integration__info .info_group svg{
+  width: 24px;
+  fill: #7826e7;
+}
+
+.integration__info .info_group h1{
+  font-size: 18px;
+  font-weight: 700;
+  background: rgb(120, 38, 231);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 38, 231, 1) 0%,
+    rgba(200, 38, 231, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* margin-bottom: 5px; */
+}
+
+.integration__info .info_group p{
+    font-weight: 500;
+    color:#5f6575;
+    line-height: 1.3;
+}
+
+.co, .cp {
+  fill: #cfc5ff;
+}
+
+.co, .cq {
+  stroke: #dad3fa;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.cr {
+  fill: #301506;
+}
+
+.cr, .cs, .ct, .cp, .cu, .cv, .cw, .cx, .cy, .cz, .da, .db, .dc, .dd, .de, .df, .dg, .dh, .di, .dj, .dk, .dl, .dm, .dn, .do, .dp, .dq, .dr, .ds, .dt, .du, .dv, .dw, .dx {
+  stroke-width: 0px;
+}
+
+.cr, .cu, .da, .db {
+  fill-rule: evenodd;
+}
+
+.cs {
+  fill: #aa9678;
+}
+
+.ct {
+  fill: #c01818;
+}
+
+.cq, .cy {
+  fill: none;
+}
+
+.cw {
+  fill: #d50029;
+}
+
+.cx {
+  fill: #c0b098;
+}
+
+.cz {
+  fill: #fab80a;
+}
+
+.da {
+  fill: #85c440;
+}
+
+.db {
+  fill: #323634;
+}
+
+.dc {
+  fill: #a0dbe8;
+}
+
+.dd {
+  fill: #676a6a;
+}
+
+.de {
+  fill: #fff;
+}
+
+.df {
+  fill: #7826e7;
+  filter: drop-shadow(0 0 15px #7826e7)
+  drop-shadow(0 0 10px #7826e7)
+  drop-shadow(0 0 5px #7826e7);
+}
+
+.dg {
+  fill: #29007c;
+}
+
+.dh {
+  fill: #909393;
+}
+
+.di {
+  fill: #ffe600;
+}
+
+.dj {
+  fill: #8b7460;
+}
+
+.dk {
+  fill: #95bf47;
+}
+
+.dl {
+  fill: #525353;
+}
+
+.dm {
+  fill: #bbbcbd;
+}
+
+.dn {
+  fill: #e2066f;
+}
+
+.do {
+  fill: #fbb040;
+}
+
+.dp {
+  fill: #2d3277;
+}
+
+.dq {
+  fill: #e2dddb;
+}
+
+.dr {
+  fill: #fecc00;
+}
+
+.ds {
+  fill: #5e8e3e;
+}
+
+.dt {
+  fill: #9f2255;
+}
+
+.du {
+  fill: #f26322;
+}
+
+.dv {
+  fill: #ff5a00;
+}
+
+.dw {
+  fill: #f90;
+}
+
+.dx {
+  fill: #7f54b3;
+}

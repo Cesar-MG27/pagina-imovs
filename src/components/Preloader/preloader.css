@@ -1,0 +1,51 @@
+.page__pageload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7826e7;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__pageload {
+  width: 400px;
+  transition: 0.3s;
+  overflow: visible;
+}
+
+.logo__pageload path,
+.logo__pageload polygon {
+  stroke-miterlimit: 10;
+  
+}
+
+.logo__pageload .letter__m,
+.logo__pageload .letter__i,
+.logo__pageload .letter__v {
+  stroke: #000000;
+  fill: #000000;
+}
+
+.logo__pageload .letter__s {
+  stroke-width: 2.13px;
+  stroke: #000000;
+  fill: transparent;
+}
+
+.logo__pageload .letter__m,
+.logo__pageload .letter__i,
+.logo__pageload .letter__v,
+.logo__pageload .letter__s {
+  opacity: 0;
+}
+
+.logo__pageload .letter__o,
+.logo__pageload .number__one {
+  stroke-width: 2.13px;
+  stroke: #000;
+  fill: #7826e7;
+}

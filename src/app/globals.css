@@ -1,33 +1,286 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:root {
+  --cl-dark-text: #333237;
+  --cl-main: #7826e7;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Ocultar los botones de aumento y disminución */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  background: #ffffff;
+  width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 500px;
+}
+
+a{
+  color: #000;
+  text-decoration: none;  
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button__main{
+  background: rgb(120, 38, 231);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 38, 231, 1) 0%,
+    rgba(200, 38, 231, 1) 100%
+  );
+  color: #ffffff;
+  padding: 20px 40px;
+  display: block;
+  width: max-content;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.button__text{
+  background: rgb(120, 38, 231);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 38, 231, 1) 0%,
+    rgba(200, 38, 231, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.home__page {
+  /* padding: 2em; */
+  height: max-content;
+}
+
+.home__title {
+  padding: 8em 8em 4em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.title {
+  font-size: 72px;
+}
+.title span{
+  background: rgb(120, 38, 231);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 38, 231, 1) 0%,
+    rgba(200, 38, 231, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 400;
+}
+
+.question{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.description {
+  line-height: 1.4;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 30px;
+  color: #5f6575 !important;
+}
+
+.home__title .description {
+  max-width: 800px;
+}
+
+
+.home__video {
+  width: 96%;
+  margin: auto;
+  height: 100vh;
+  border-radius: 8em;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about{
+  padding:8em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  text-align: center;
+  position: relative;
+}
+
+.about .title,
+.about .description{
+  max-width: 900px;
+  z-index: 1;
+}
+
+.about .description{
+  max-width: 700px;
+}
+
+.relleno{
+  height: 200vh;
 }
