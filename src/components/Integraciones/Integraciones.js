@@ -38,9 +38,9 @@ const Integraciones = () => {
 
   return (
     <div className="integrations">
-      <div className="title">
+      <h1 className="title">
         <span>Integraciones</span> que optimizan tus procesos
-      </div>
+      </h1>
       <p className="description">
         Tu también puedes hacer hacer uso de la conectividad para el éxito de tu
         negocio, transforma la manera en que operas y manténte a la vanguardia.
@@ -824,7 +824,7 @@ const Integraciones = () => {
               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
             </svg>
           </figure>
-          <h1>Tiendas en lí|nea</h1>
+          <h1>Tiendas en línea</h1>
           <p>
             Tu también puedes hacer hacer uso de la conectividad para el éxito
             de tu negocio

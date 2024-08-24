@@ -185,7 +185,7 @@ a{
 }
 
 .button__text{
-  background: rgb(120, 38, 231);
+  background: #7826e7;
   background: linear-gradient(
     90deg,
     rgba(120, 38, 231, 1) 0%,
@@ -194,8 +194,19 @@ a{
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+}
+
+.button__text svg{
+  width: 22px;
+  transform: translate(0,5px);
+  fill: #7826e7;
+  transition: .3s;
+}
+
+.button__text:hover svg{
+  transform: translate(5px,5px);
 }
 
 .home__page {
@@ -226,6 +237,7 @@ a{
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 400;
+  
 }
 
 .question{
@@ -239,7 +251,8 @@ a{
   font-size: 22px;
   font-weight: 400;
   border-radius: 30px;
-  color: #5f6575 !important;
+  color: #5f6575;
+  transition: .3s;
 }
 
 .home__title .description {
@@ -283,4 +296,8 @@ video {
 
 .relleno{
   height: 200vh;
+}
+
+.bg__black{
+  background: #000;
 }
