@@ -180,7 +180,6 @@ a{
   display: block;
   width: max-content;
   border-radius: 50px;
-  text-transform: capitalize;
   font-size: 16px;
 }
 
@@ -223,8 +222,12 @@ a{
   gap: 2em;
 }
 
+.home__title .title{
+  font-size: 74px;
+}
+
 .title {
-  font-size: 72px;
+  font-size: 54px;
 }
 .title span{
   background: rgb(120, 38, 231);

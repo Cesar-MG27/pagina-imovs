@@ -3,8 +3,8 @@ import "./software.css";
 
 import Link from "next/link";
 import Image from "next/image";
-import imacMockup from "./imac_mockup.png";
-import imacMockup2 from "./imac_mockup2.png";
+import imacMockup from "./imgs/mockup2.jpg";
+import imacMockup2 from "./imgs/imac_mockup2.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -21,8 +21,8 @@ const Software = () => {
       // duration: 4,
       scrollTrigger: {
         trigger: ".pinSection",
-        start: "top 10%",
-        end: "bottom 10%",
+        start: "top 2%",
+        end: "bottom 2%",
         scrub: 4,
         pin: ".pinSection",
         // toggleActions: "restart none none none",
@@ -34,8 +34,8 @@ const Software = () => {
       clipPath: "polygon(0 0, 100% 0, 100% 0%, 0 0%)",
       scrollTrigger: {
         trigger: ".pinSection",
-        start: "top 10%",
-        end: "bottom 10%",
+        start: "top 2%",
+        end: "bottom 2%",
         scrub: 1,
         // markers: true
       },
@@ -45,34 +45,20 @@ const Software = () => {
       clipPath: "polygon(0 0, 100% 0, 100% 0%, 0 0%)",
       scrollTrigger: {
         trigger: ".pinSection",
-        start: "top 10%",
-        end: "bottom 10%",
+        start: "top 2%",
+        end: "bottom 2%",
         scrub: 0.5,
         // markers: true
       },
     });
 
-    // gsap.to(".pinbox1", {
-    //   scrollTrigger: {
-    //     trigger: ".pinbox1",
-    //     start: "top 0%",
-    //     end: "bottom 0%",
-    //     toggleClass: "bg__black",
-    //     scrub: 0.5,
-    //     markers: true,
-    //   },
-    // });
-
     gsap.to(".software__descriptions", {
-      // height: 0,
-      // duration: 4,
       scrollTrigger: {
         trigger: ".software__descriptions",
-        start: "top 10%",
-        end: "bottom 10%",
+        start: "top 2%",
+        end: "bottom 2%",
         scrub: 4,
         pin: ".software__descriptions",
-        // markers: true,
       },
     });
 
@@ -82,10 +68,9 @@ const Software = () => {
       scale: 0.5,
       scrollTrigger: {
         trigger: ".software__descriptions",
-        start: "top 10%",
-        end: "bottom 10%",
+        start: "top 2%",
+        end: "bottom 2%",
         scrub: 1,
-        // markers: true,
       },
     });
 
@@ -163,6 +148,19 @@ const Software = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="software__card">
+        <h1>Personaliza o actuliza tu software</h1>
+        <p className="description">
+          Nuestras soluciones innovadoras se integran a la perfección con tus
+          operaciones actuales, resolviendo problemas específicos y mejorando tu
+          competitividad en el mercado. Desde la planificación hasta la
+          implementación, nos aseguramos de que cada detalle esté alineado con
+          tus objetivos empresariales.
+        </p>
+        <Link className="button__main" href={"/"}>
+          Haz que su negocio sea más eficiente y más exitoso{" "}
+        </Link>
       </div>
     </div>
   );
