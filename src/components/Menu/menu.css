@@ -37,6 +37,11 @@
   height: 2px;
   border-radius: 500px;
   background: #000;
+  transition: .3s;
+}
+
+body.dark .menu-open span{
+  background: #fff;
 }
 
 .menu-overlay {
@@ -142,7 +147,6 @@
 .logo__imovs path,
 .logo__imovs polygon {
   transition: 0.3s;
-  transition-delay: 0.8s;
   stroke-miterlimit: 10;
 }
 
@@ -153,14 +157,27 @@
   fill: #000000;
 }
 
+body.dark .letter__m,
+body.dark .letter__i,
+body.dark .letter__v {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
 .letter__s {
-  stroke-width: 2.13px;
+  stroke-width: 3px;
   stroke: #000000;
   fill: transparent;
 }
 
+body.dark .letter__s {
+  stroke-width: 3px;
+  stroke: #ffffff;
+  fill: transparent;
+}
+
 .letter__o {
-  stroke-width: 2.13px;
+  stroke-width: 3px;
   stroke: var(--cl-main);
   fill: var(--cl-main);
 }

@@ -161,6 +161,15 @@ body::-webkit-scrollbar-thumb {
   border-radius: 500px;
 }
 
+body.dark::-webkit-scrollbar {
+  background: #000000;
+  width: 6px;
+}
+body.dark::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 500px;
+}
+
 a{
   color: #000;
   text-decoration: none;  
@@ -211,6 +220,11 @@ a{
 .home__page {
   /* padding: 2em; */
   height: max-content;
+  transition: background .5s;
+}
+
+body.dark .home__page{
+  background: #000;
 }
 
 .home__title {
@@ -227,8 +241,10 @@ a{
 }
 
 .title {
+  transition: .3s;
   font-size: 54px;
 }
+
 .title span{
   background: rgb(120, 38, 231);
   background: linear-gradient(
@@ -241,6 +257,10 @@ a{
   color: transparent;
   font-weight: 400;
   
+}
+
+body.dark .title{
+  color: #fff;
 }
 
 .question{
@@ -256,6 +276,10 @@ a{
   border-radius: 30px;
   color: #5f6575;
   transition: .3s;
+}
+
+body.dark .description{
+  color: #e7e7e7;
 }
 
 .home__title .description {

@@ -1,4 +1,3 @@
-
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
@@ -18,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={montserrat.className}>
-      <Menu />
-      <body >{children}</body>
+      <body>
+        <Menu />
+        {children}
+      </body>
     </html>
   );
 }

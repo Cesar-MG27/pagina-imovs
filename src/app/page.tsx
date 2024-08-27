@@ -2,11 +2,34 @@
 import VideoPlayer from "@/components/VideoPlayer/VideoPlayer.js";
 import Link from "next/link";
 import Software from "@/components/Software/Software.js";
-import Integraciones from "@/components/Integraciones/Integraciones.js"
+import Integraciones from "@/components/Integraciones/Integraciones.js";
+import Websites from "@/components/Websites/Websites.js";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger, useGSAP);
+}
 
 export default function Home() {
-
+  useGSAP(() => {
+    gsap.from(".home__page", {
+      scrollTrigger: {
+        trigger: ".websites",
+        start: "top 75%",
+        end: "bottom 75%",
+        scrub: 4,
+        toggleClass: {
+          targets: "body",
+          className: "dark",
+        },
+        // markers: true,
+      },
+    });
+    
+  });
 
   return (
     <div className="home__page">
@@ -43,7 +66,9 @@ export default function Home() {
         </Link>
       </div>
       <Integraciones />
-      <Software/>
+      <Software />
+      <Websites />
+      <div className="relleno"></div>
     </div>
   );
 }
