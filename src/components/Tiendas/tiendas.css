@@ -17,6 +17,7 @@
   min-width: 50%;
   width: 50%;
   height: auto;
+  pointer-events: none;
   z-index: 1;
 }
 
@@ -26,39 +27,27 @@
   height: max-content;
   margin-left: 75px;
   display: flex;
-  /* z-index: 1; */
-  /* overflow: hidden; */
 }
 .shops .shop-des {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
   height: max-content;
   min-width: 100%;
-  padding:9em;
+  padding:8em;
 }
 
-.shop__description-container {
+.shop__question{
+  padding-right: 6em;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-}
-
-.shops .shop-des.shop_des1,
-.shops .shop-des.shop_des1 .shop__description-container {
-  text-align: right;
-  align-items: flex-end;
-}
-
-.shops .shop-des.shop_des2 .shop__description-container {
-  text-align: left;
+  gap: 10px;
 }
 
 .shops__benefits{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 50px;
-  margin: 25px 0 40px;
 }
 
 .sbenefit{

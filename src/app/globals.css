@@ -195,6 +195,7 @@ a{
 }
 
 .button__text{
+  width: max-content;
   background: #7826e7;
   background: linear-gradient(
     90deg,
@@ -208,11 +209,27 @@ a{
   font-weight: 600;
 }
 
+body.dark .button__text{
+  background: #7826e7;
+  background: linear-gradient(
+    90deg,
+    rgb(170, 0, 255) 0%,
+    rgb(231, 11, 234) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .button__text svg{
   width: 22px;
   transform: translate(0,5px);
   fill: #7826e7;
   transition: .3s;
+}
+
+body.dark .button__text svg{
+  fill: rgb(170, 0, 255);
 }
 
 .button__text:hover svg{
@@ -266,7 +283,8 @@ body.dark .title{
 }
 
 .question{
-  font-size: 22px;
+  /* max-width: 80%; */
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
 }
