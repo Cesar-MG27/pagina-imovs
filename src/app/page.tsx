@@ -4,6 +4,7 @@ import Link from "next/link";
 import Software from "@/components/Software/Software.js";
 import Integraciones from "@/components/Integraciones/Integraciones.js";
 import Websites from "@/components/Websites/Websites.js";
+import Tiendas from "@/components/Tiendas/Tiendas.js";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -19,6 +20,7 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".websites",
         start: "top 75%",
+        endTrigger: ".tiendas",
         end: "bottom 75%",
         scrub: 4,
         toggleClass: {
@@ -68,7 +70,8 @@ export default function Home() {
       <Integraciones />
       <Software />
       <Websites />
-      <div className="relleno"></div>
+      <Tiendas />
+      
     </div>
   );
 }
