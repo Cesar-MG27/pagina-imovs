@@ -1,7 +1,7 @@
 "use client";
 import VideoPlayer from "@/components/VideoPlayer/VideoPlayer.js";
 import Link from "next/link";
-import Menu from "@/components/menu/Menu.js";
+import Menu from "@/components/Menu/Menu.js";
 import Software from "@/components/Software/Software.js";
 import Integraciones from "@/components/Integraciones/Integraciones.js";
 import Websites from "@/components/Websites/Websites.js";
