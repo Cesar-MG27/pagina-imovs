@@ -282,7 +282,16 @@ body.dark .title{
   color: #fff;
 }
 
-.question{
+.question__container,
+.list__container{
+  padding-right: 6em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question,
+.list__title{
   /* max-width: 80%; */
   font-size: 18px;
   font-weight: 600;
@@ -310,7 +319,7 @@ body.dark .title{
 
 body.dark .description,
 body.dark .list li{
-  color: #e7e7e7;
+  color: #c4c4c4;
 }
 
 .home__title .description {

@@ -45,7 +45,7 @@ const Tiendas = () => {
         end: "bottom 80%",
         // scrub: 1,
         pin: ".imac_l",
-          // markers: true,
+        // markers: true,
       },
     });
 
@@ -124,9 +124,9 @@ const Tiendas = () => {
         <div className="shop__info-container">
           <div className="shop-des shop_des1">
             <h1 className="title">
-              Alcanza nuevos clientes con una <span>tienda en línea</span>
+              Conquista nuevos mercados con tu <span>tienda en línea</span>
             </h1>
-            <div className="shop__question">
+            <div className="question__container">
               <h2 className="question">
                 ¿Te imaginas que tu negocio tenga presencia en línea, donde tú
                 decides qué vender y cómo hacerlo?

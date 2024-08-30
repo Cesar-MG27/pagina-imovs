@@ -22,7 +22,7 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".websites",
         start: "top 75%",
-        endTrigger: ".shops",
+        endTrigger: ".apps",
         end: "bottom 75%",
         scrub: 4,
         toggleClass: {

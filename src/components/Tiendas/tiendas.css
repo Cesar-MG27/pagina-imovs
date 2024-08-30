@@ -37,13 +37,6 @@
   padding:8em;
 }
 
-.shop__question{
-  padding-right: 6em;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .shops__benefits{
   display: grid;
   grid-template-columns: repeat(2,1fr);
