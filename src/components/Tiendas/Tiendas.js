@@ -45,21 +45,22 @@ const Tiendas = () => {
         end: "bottom 80%",
         // scrub: 1,
         pin: ".imac_l",
-        //   markers: true,
+          // markers: true,
       },
     });
 
+    // Mover imac_l en el eje X
     gsap.to(".imac_l", {
       x: "105%",
       scrollTrigger: {
         trigger: ".shops",
         start: "50% 50%",
         end: "50% 25%",
-        scrub: 0.8,
-        // markers: true,
+        scrub: 1,
       },
     });
 
+    // Desvanecer y mover el elemento shop_des1
     gsap.to(".shop_des1", {
       x: -300,
       opacity: 0,
@@ -67,11 +68,11 @@ const Tiendas = () => {
         trigger: ".shops",
         start: "50% 50%",
         end: "50% 25%",
-        scrub: 0.8,
-        //   markers: true,
+        scrub: 1,
       },
     });
 
+    // Animar la entrada del elemento shop_des2
     gsap.from(".shop_des2", {
       x: 300,
       opacity: 0,
@@ -79,33 +80,33 @@ const Tiendas = () => {
         trigger: ".shops",
         start: "50% 50%",
         end: "50% 25%",
-        scrub: 0.8,
-        //   markers: true,
+        scrub: 1,
       },
     });
 
+    // Mover imac_r en el eje X
     gsap.to(".imac_r", {
       x: "105%",
       scrollTrigger: {
         trigger: ".shops",
         start: "50% 50%",
         end: "50% 25%",
-        scrub: 0.8,
-        //   markers: true,
+        scrub: 1,
       },
     });
 
+    // Mover imac_r en el eje Y
     gsap.to(".imac_r", {
       y: "-100%",
       scrollTrigger: {
         trigger: ".shops",
         start: "50% 20%",
         end: "bottom 80%",
-        scrub: 2,
-        //   markers: true,
+        scrub: 1,
       },
     });
 
+    // Mover shop__info-container en el eje Y
     gsap.to(".shop__info-container", {
       y: "-100%",
       scrollTrigger: {
@@ -113,7 +114,6 @@ const Tiendas = () => {
         start: "50% 5%",
         end: "bottom 80%",
         scrub: 1,
-        //   markers: true,
       },
     });
   });
