@@ -1,6 +1,7 @@
 "use client";
 import VideoPlayer from "@/components/VideoPlayer/VideoPlayer.js";
 import Link from "next/link";
+import Menu from "@/components/menu/Menu.js";
 import Software from "@/components/Software/Software.js";
 import Integraciones from "@/components/Integraciones/Integraciones.js";
 import Websites from "@/components/Websites/Websites.js";
@@ -31,11 +32,11 @@ export default function Home() {
         // markers: true,
       },
     });
-    
   });
 
   return (
     <div className="home__page">
+      <Menu />
       <div className="home__title">
         <h1 className="title">
           Fábrica de <span>software</span>

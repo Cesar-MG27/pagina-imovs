@@ -1,7 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-import Menu from "@/components/menu/Menu.js";
+
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={montserrat.className}>
       <body>
-        <Menu />
+       
         {children}
       </body>
     </html>
