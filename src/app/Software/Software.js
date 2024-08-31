@@ -6,13 +6,7 @@ import Image from "next/image";
 import imacMockup from "./imgs/mockup2.jpg";
 import imacMockup2 from "./imgs/imac_mockup2.png";
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
 
 const Software = () => {
   useGSAP(() => {
@@ -37,17 +31,6 @@ const Software = () => {
         start: "top 2%",
         end: "bottom 2%",
         scrub: 1,
-        // markers: true
-      },
-    });
-
-    gsap.to(".bgimg1", {
-      clipPath: "polygon(0 0, 100% 0, 100% 0%, 0 0%)",
-      scrollTrigger: {
-        trigger: ".pinSection",
-        start: "top 2%",
-        end: "bottom 2%",
-        scrub: 0.5,
         // markers: true
       },
     });

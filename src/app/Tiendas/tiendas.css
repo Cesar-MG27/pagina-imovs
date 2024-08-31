@@ -1,8 +1,11 @@
 .shops {
   width: 100%;
   padding: 6em 0%;
-  color: #fff;
   position: relative;
+}
+
+body.dark .shops{
+  color: #fff;
 }
 
 .shops .shops__pictures {

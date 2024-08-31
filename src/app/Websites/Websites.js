@@ -4,13 +4,16 @@ import "./websites.css";
 import Link from "next/link";
 
 import React from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+// import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
+// import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+// if (typeof window !== "undefined") {
+//   gsap.registerPlugin(ScrollTrigger, useGSAP);
+// }
+
+import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
 
 const Websites = () => {
   const images1 = [
@@ -83,7 +86,9 @@ const Websites = () => {
           Nuestro enfoque personalizado asegura que cada aspecto de tu sitio web
           capture y mantenga la atención de tus clientes potenciales
         </p>
-        <Link href={"/"} className="button__main">¡Nos encantaría poder ayudarte!</Link>
+        <Link href={"/"} className="button__main">
+          ¡Nos encantaría poder ayudarte!
+        </Link>
       </div>
 
       <div className="container__marquees">

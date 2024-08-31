@@ -1,15 +1,10 @@
 import "./appsmobiles.css";
-
-import Spline from "@splinetool/react-spline";
-
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+const SplineComponent = dynamic(() => import("@splinetool/react-spline") )
+
+import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
 
 const AppsMobiles = () => {
   useGSAP(() => {
@@ -61,7 +56,7 @@ const AppsMobiles = () => {
   return (
     <div className="apps">
       <div className="canvas_apps">
-        <Spline scene="https://prod.spline.design/QakZR1qPL0wj1gxL/scene.splinecode" />
+        <SplineComponent scene="https://prod.spline.design/QakZR1qPL0wj1gxL/scene.splinecode" />
       </div>
 
       <div className="apps__content">

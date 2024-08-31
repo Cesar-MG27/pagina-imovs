@@ -14,6 +14,8 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
 }
 
+// import { gsap, useGSAP, ScrollTrigger } from "@/libs/gsapSetUp.js";
+
 const Tiendas = () => {
   useGSAP(() => {
     gsap.to(".shops__pictures", {
@@ -90,8 +92,8 @@ const Tiendas = () => {
   return (
     <div className="shops">
       <div className="shops__pictures">
-        <Image src={ImacIzquierdo} className="imac imac_l" />
-        <Image src={ImacDerecho} className="imac imac_r" />
+        <Image src={ImacIzquierdo} className="imac imac_l" alt="iMOVS | DESARROLO DE SOFTWARE" />
+        <Image src={ImacDerecho} className="imac imac_r" alt="iMOVS | DESARROLO DE SOFTWARE" />
       </div>
       <div className="shop__info-container">
         <div className="shop-des shop_des1">

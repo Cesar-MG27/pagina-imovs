@@ -1,20 +1,18 @@
 "use client";
-import VideoPlayer from "@/components/VideoPlayer/VideoPlayer.js";
+import dynamic from "next/dynamic";
+const VideoPlayer = dynamic(() => import("@/components/VideoPlayer/VideoPlayer.js") )
+
 import Link from "next/link";
 import Menu from "@/components/Menu/Menu.js";
-import Software from "@/components/Software/Software.js";
-import Integraciones from "@/components/Integraciones/Integraciones.js";
-import Websites from "@/components/Websites/Websites.js";
-import Tiendas from "@/components/Tiendas/Tiendas.js";
-import AppsMobiles from "@/components/AppsMobiles/AppsMobiles.js";
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import Software from "@/app/Software/Software.js";
+import Integraciones from "@/app/Integraciones/Integraciones.js";
+import Websites from "@/app/Websites/Websites.js";
+import Tiendas from "@/app/Tiendas/Tiendas.js";
+import AppsMobiles from "@/app/AppsMobiles/AppsMobiles.js";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+// En cualquier componente o archivo donde necesites GSAP
+import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
 
 export default function Home() {
   useGSAP(() => {

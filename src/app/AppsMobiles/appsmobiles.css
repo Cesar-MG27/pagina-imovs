@@ -40,7 +40,6 @@ body.dark .apps{
 }
 
 .apps .apps_info {
-  backdrop-filter: blur(50px);
   /* padding: 10%; */
   border-radius: 50px;
   display: flex;
