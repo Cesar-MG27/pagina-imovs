@@ -6,7 +6,7 @@ import Image from "next/image";
 import imacMockup from "./imgs/mockup2.jpg";
 import imacMockup2 from "./imgs/imac_mockup2.png";
 
-import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
+import { gsap, useGSAP } from "@/libs/gsapConfig.js";
 
 const Software = () => {
   useGSAP(() => {

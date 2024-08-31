@@ -13,7 +13,7 @@ import React from "react";
 //   gsap.registerPlugin(ScrollTrigger, useGSAP);
 // }
 
-import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
+import { gsap, useGSAP } from "@/libs/gsapConfig.js";
 
 const Websites = () => {
   const images1 = [

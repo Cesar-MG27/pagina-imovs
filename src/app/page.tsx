@@ -12,7 +12,7 @@ import Tiendas from "@/app/Tiendas/Tiendas.js";
 import AppsMobiles from "@/app/AppsMobiles/AppsMobiles.js";
 
 // En cualquier componente o archivo donde necesites GSAP
-import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
+import { gsap, useGSAP } from "@/libs/gsapConfig.js";
 
 export default function Home() {
   useGSAP(() => {

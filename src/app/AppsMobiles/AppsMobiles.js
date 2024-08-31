@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SplineComponent = dynamic(() => import("@splinetool/react-spline") )
 
-import { gsap, useGSAP } from "@/libs/gsapSetUp.js";
+import { gsap, useGSAP } from "@/libs/gsapConfig.js";
 
 const AppsMobiles = () => {
   useGSAP(() => {

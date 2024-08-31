@@ -14,7 +14,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
 }
 
-// import { gsap, useGSAP, ScrollTrigger } from "@/libs/gsapSetUp.js";
+// import { gsap, useGSAP } from "@/libs/gsapConfig.js";
 
 const Tiendas = () => {
   useGSAP(() => {
