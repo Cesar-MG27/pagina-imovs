@@ -54,7 +54,7 @@ const AppsMobiles = () => {
         start: "60% top",
         end: "80% top",
         // markers: true,
-        toggleActions: "play nopne play reverse",
+        toggleActions: "play none play reverse",
       },
     });
   });
