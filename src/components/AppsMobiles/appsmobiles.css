@@ -2,9 +2,13 @@
   height: 200vh;
   width: 100%;
   position: relative;
-  color: #fff;
+
   display: flex;
   /* background: red; */
+}
+
+body.dark .apps{
+    color: #fff;
 }
 
 .apps__content {
@@ -24,6 +28,7 @@
 .apps_s1,
 .apps_s2 {
   display: flex;
+  align-items: center;
   width: 50%;
   z-index: 1;
   position: relative;
@@ -36,20 +41,24 @@
 
 .apps .apps_info {
   backdrop-filter: blur(50px);
-  padding: 50px;
+  /* padding: 10%; */
   border-radius: 50px;
-}
-
-/* .apps_s1 .apps_info{
-    padding-right: 5%;
-}
-
-.apps_s2 .apps_info{
-    padding-left: 15%;
-} */
-
-.apps_info {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
+
+.apps .apps_info.appsi1{
+    padding: 10% 25% 10% 0%;
+}
+
+.apps .apps_info.appsi2{
+    padding: 10% 0 10% 25%;
+}
+
+.apps_info .question__container,
+.apps_info .list__container{
+    padding-right: 0;
+}
+
+

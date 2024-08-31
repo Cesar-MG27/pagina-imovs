@@ -40,9 +40,9 @@ const AppsMobiles = () => {
       ease: 1,
       scrollTrigger: {
         trigger: ".appsi1",
-        start: "top top",
-        end: "25% top",
-        markers: true,
+        start: "top 10%",
+        end: "25% 10%",
+        // markers: true,
         toggleActions: "play reverse play reverse",
       },
     });
@@ -51,8 +51,8 @@ const AppsMobiles = () => {
       ease: 1,
       scrollTrigger: {
         trigger: ".apps_s2",
-        start: "50% top",
-        end: "75% top",
+        start: "60% top",
+        end: "80% top",
         // markers: true,
         toggleActions: "play nopne play reverse",
       },
@@ -68,13 +68,47 @@ const AppsMobiles = () => {
         <div className="apps_s2">
           <div className="apps_info appsi2">
             <h1 className="title">
-              Alcanza nuevos clientes con una <span>tienda en línea</span>
+              <span>imovs crea la app</span> perfecta para tu negocio
             </h1>
             <p className="description">
               ¡Ahora es tu oportunidad! Desde la gestión de productos hasta la
               experiencia de pago, nos encargamos de todos los detalles para que
               tu tienda en línea sea un éxito.
             </p>
+            <div className="list__container">
+              <h2 className="list__title">Nuestro proceso creativo incluye:</h2>
+              <ul className="list">
+                <li>
+                  <span>·</span> Análisis de requisitos y definición de la
+                  estrategia
+                </li>
+                <li>
+                  <span>·</span> Diseño de la interfaz de usuario (UI) y
+                  experiencia (UX)
+                </li>
+                <li>
+                  <span>·</span> Desarrollo nativo para iOS y Android o híbrido
+                  multiplataforma
+                </li>
+                <li>
+                  <span>·</span> Integración con tus sistemas y bases de datos
+                  existentes
+                </li>
+                <li>
+                  <span>·</span> Pruebas exhaustivas y aseguramiento de la
+                  calidad
+                </li>
+                <li>
+                  <span>·</span> Publicación en App Store y Google Play Store
+                </li>
+                <li>
+                  <span>·</span> Mantenimiento y actualizaciones periódicas
+                </li>
+              </ul>
+            </div>
+            <Link className="button__main" href={"/"}>
+              Contáctanos para discutir tus ideas y objetivos
+            </Link>
           </div>
         </div>
         <div className="apps_s1">
