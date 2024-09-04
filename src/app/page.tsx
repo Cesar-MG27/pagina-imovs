@@ -10,6 +10,7 @@ import Integraciones from "@/app/Integraciones/Integraciones.js";
 import Websites from "@/app/Websites/Websites.js";
 import Tiendas from "@/app/Tiendas/Tiendas.js";
 import AppsMobiles from "@/app/AppsMobiles/AppsMobiles.js";
+import Contact from "@/app/Contact/Contact.js";
 
 // En cualquier componente o archivo donde necesites GSAP
 import { gsap, useGSAP } from "@/libs/gsapConfig.js";
@@ -72,7 +73,7 @@ export default function Home() {
       <Websites />
       <Tiendas />
       <AppsMobiles />
-      <div className="relleno"></div>
+      <Contact />
     </div>
   );
 }

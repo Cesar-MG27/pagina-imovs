@@ -173,7 +173,6 @@ body.dark::-webkit-scrollbar-thumb {
 }
 
 a{
-  color: #000;
   text-decoration: none;  
   font-size: 14px;
   font-weight: 500;
@@ -257,11 +256,13 @@ body.dark .home__page{
 
 .home__title .title{
   font-size: 74px;
+  
 }
 
 .title {
   transition: .3s;
   font-size: 54px;
+  pointer-events: none;
 }
 
 .title span{

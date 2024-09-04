@@ -56,7 +56,9 @@ const AppsMobiles = () => {
   return (
     <div className="apps">
       <div className="canvas_apps">
-        <SplineComponent scene="https://prod.spline.design/QakZR1qPL0wj1gxL/scene.splinecode" />
+      <SplineComponent
+        scene="https://prod.spline.design/QakZR1qPL0wj1gxL/scene.splinecode" 
+      />
       </div>
 
       <div className="apps__content">

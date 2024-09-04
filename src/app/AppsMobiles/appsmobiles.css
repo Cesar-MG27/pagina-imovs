@@ -4,7 +4,7 @@
   position: relative;
 
   display: flex;
-  /* background: red; */
+  padding-bottom: 6em;
 }
 
 body.dark .apps{
