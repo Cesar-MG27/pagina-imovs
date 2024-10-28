@@ -5,12 +5,12 @@ const VideoPlayer = dynamic(() => import("@/components/VideoPlayer/VideoPlayer.j
 import Link from "next/link";
 import Menu from "@/components/Menu/Menu.js";
 
-import Software from "@/app/Software/Software.js";
-import Integraciones from "@/app/Integraciones/Integraciones.js";
-import Websites from "@/app/Websites/Websites.js";
-import Tiendas from "@/app/Tiendas/Tiendas.js";
-import AppsMobiles from "@/app/AppsMobiles/AppsMobiles.js";
-import Contact from "@/app/Contact/Contact.js";
+import Software from "@/app/home/Software/Software.js";
+import Integraciones from "@/app/home/Integraciones/Integraciones.js";
+import Websites from "@/app/home/Websites/Websites.js";
+import Tiendas from "@/app/home/Tiendas/Tiendas.js";
+import AppsMobiles from "@/app/home/AppsMobiles/AppsMobiles.js";
+import Contact from "@/app/home/Contact/Contact.js";
 
 // En cualquier componente o archivo donde necesites GSAP
 import { gsap, useGSAP } from "@/libs/gsapConfig.js";

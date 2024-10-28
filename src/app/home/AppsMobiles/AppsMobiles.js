@@ -1,31 +1,18 @@
 import "./appsmobiles.css";
-import dynamic from "next/dynamic";
 import Link from "next/link";
-
-const SplineComponent = dynamic(() => import("@splinetool/react-spline") )
-
+import SplineComponent from "@splinetool/react-spline";
 import { gsap, useGSAP } from "@/libs/gsapConfig.js";
 
 const AppsMobiles = () => {
   useGSAP(() => {
-    gsap.to(".apps", {
-      scrollTrigger: {
-        trigger: ".apps",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1,
-        pin: ".canvas_apps",
-        // markers: true,
-      },
-    });
 
     gsap.to(".apps", {
       scrollTrigger: {
         trigger: ".apps",
         start: "top top",
-        end: "bottom bottom",
+        end: "+=2500",
         scrub: 1,
-        pin: ".apps__content",
+        pin: ".apps",
         // markers: true,
       },
     });
@@ -35,8 +22,8 @@ const AppsMobiles = () => {
       ease: 1,
       scrollTrigger: {
         trigger: ".appsi1",
-        start: "top 10%",
-        end: "25% 10%",
+        start: "top top",
+        end: "+=750",
         // markers: true,
         toggleActions: "play reverse play reverse",
       },
@@ -46,8 +33,8 @@ const AppsMobiles = () => {
       ease: 1,
       scrollTrigger: {
         trigger: ".apps_s2",
-        start: "60% top",
-        end: "80% top",
+        start: "+=1500",
+        end: "+=2500",
         // markers: true,
         toggleActions: "play none play reverse",
       },

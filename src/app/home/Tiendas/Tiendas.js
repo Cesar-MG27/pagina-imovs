@@ -52,13 +52,12 @@ const Tiendas = () => {
 
     gsap.to(".shop_des1", {
       opacity: 0,
-      x: -500,
       scrollTrigger: {
         trigger: ".shops",
         start: "50% 90%",
         end: "75% bottom",
         toggleActions: "play none play reverse",
-        // scrub: 1,
+        scrub: 1,
         // markers: true,  
       },
     });
@@ -70,20 +69,19 @@ const Tiendas = () => {
         start: "50% 90%",
         end: "75% bottom",
         toggleActions: "play none play reverse",
-        // scrub: 1,
+        scrub: 1,
         // markers: true,  
       },
     });
 
     gsap.from(".shop_des2", {
       opacity: 0,
-      x: 500,
       scrollTrigger: {
         trigger: ".shops",
         start: "50% 90%",
         end: "75% bottom",
         toggleActions: "play none play reverse",
-        // scrub: 1,
+        scrub: 1,
         // markers: true,  
       },
     });
