@@ -1,0 +1,54 @@
+.about {
+  padding: 75px 75px 300px;
+  position: relative;
+}
+
+
+.about__slogan {
+  width: 100%;
+  border-bottom: 1px solid rgba(145, 127, 150, 0.25);
+  padding: 0 150px 75px 50px;
+  line-height: 1.5;
+  font-size: 62px;
+  font-weight: 300;
+}
+
+.about__slogan span{
+  background: rgb(120, 38, 231);
+  background: linear-gradient(
+    90deg,
+    rgb(132, 15, 242) 0%,
+    rgba(200, 38, 231, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.about__slogan figure{
+  width: 112px;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-15px);
+}
+
+.about__slogan figure div{
+  width: 100% !important;
+  height: 100% !important;
+}
+.about__des {
+  padding: 75px 0 0 50px;
+  display: flex;
+}
+.about__des span{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+.about__des p {
+  max-width: 350px;
+  line-height: 1.3;
+  font-weight: 500;
+  margin-left: calc(50% - 100px);
+}

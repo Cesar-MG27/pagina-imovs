@@ -1,5 +1,7 @@
+@import url("/variables.css");
+
 .integrations {
-  background: #e5dcff;
+  background: var(--puprlegorund);
   height: max-content;
   width: 100%;
   position: relative;
@@ -58,7 +60,6 @@
   flex-direction: column;
   gap: 8px;
   border: 1px solid #cdc7ec
-  /* backdrop-filter: blur(10px); */
 }
 
 .integration__info .info_group svg{
@@ -88,11 +89,12 @@
 }
 
 .co, .cp {
-  fill: #cfc5ff;
+  stroke: none;
+  fill: var(--integration__fill);
 }
 
-.co, .cq {
-  stroke: #dad3fa;
+.cq {
+  stroke: var(--integration__stroke);
   stroke-miterlimit: 10;
   stroke-width: 2px;
 }

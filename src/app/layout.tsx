@@ -2,48 +2,46 @@
 
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-// import { useState, useEffect } from "react";
+import Header from "@/components/Header/Header";
+import { createContext, useEffect, useState } from "react";
+// import ScreenCharge from "@/components/ChargeScreen/ChagerScreen";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-// El contexto de tema
-// export const ThemeContext = createContext({
-//   isDarkMode: false,
-//   toggleTheme: () => {},
-// });
+export const ThemeContext = createContext({
+  isDarkMode: false,
+  toggleTheme: () => {},
+});
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Leer la preferencia de tema desde localStorage
-  // useEffect(() => {
-  //   const savedTheme = localStorage.getItem("theme");
-  //   if (savedTheme === "dark") {
-  //     setIsDarkMode(true);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setIsDarkMode(true);
+    }
+  }, []);
 
-  // const toggleTheme = () => {
-  //   const newTheme = !isDarkMode;
-  //   setIsDarkMode(newTheme);
-  //   localStorage.setItem("theme", newTheme ? "dark" : "light");
-
-  // };
+  const toggleTheme = () => {
+    const newTheme = !isDarkMode;
+    setIsDarkMode(newTheme);
+    localStorage.setItem("theme", newTheme ? "dark" : "light");
+  };
 
   return (
     <html lang="en" className={montserrat.className}>
-      <body >
-        {/* <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}> */}
-          {/* <div className={`layout__container ${isDarkMode ? "dark" : ""}`}> */}
-          <div className={`layout__container`}>
-            {children}
-          </div>
-        {/* </ThemeContext.Provider> */}
-      </body>
+      <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
+        <body className={`layout__container ${isDarkMode ? "dark" : ""}`}>
+          <Header />
+          <div className={`layout__container`}>{children}</div>
+        </body>
+      </ThemeContext.Provider>
     </html>
   );
 }

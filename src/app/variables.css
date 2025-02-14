@@ -1,0 +1,19 @@
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --glassground: rgba(255, 255, 255, 0.8);
+    --puprlegorund: #e5dcff;
+    --integration__fill: #cfc5ff;
+    --integration__stroke: #dad3fa;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+      --glassground: rgba(0, 0, 0, 0.8);
+      --puprlegorund: #2a1735;
+      --integration__fill: #580a85;
+      --integration__stroke: #1c0b26;
+    }
+  }
