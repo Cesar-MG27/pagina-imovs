@@ -37,31 +37,28 @@ export default function Welcome() {
         start: "top top",
         end: "+=1400",
         scrub: 1,
-        
-      }
+      },
     });
   });
 
   return (
     <div>
       <div className="home__content">
-        <div></div>
         <div className="home__title">
           <h1>
-            Fábrica de <br /> <span>software</span>
+            Fábrica de <br /> <span>Software</span>
           </h1>
         </div>
         <div className="home__description">
           <div className="home__description-group">
+            <span>¡Nos encantaría ayudarte!</span>
             <p className="">
               Desarrollamos soluciones tecnológicas para empresas que buscan
               optimizar sus procesos, mejorar su eficiencia y mantenerse
               competitivas. Hacemos uso de la tecnología para mejorar tu
-              rendimiento.
+              rendimiento, trabaja con expertos en desarrollo de software y
+              obtienen soluciones innovadoras.
             </p>
-            <Link href={"/"} className="button__text">
-              ¡Nos encantaría ayudarte!
-            </Link>
           </div>
         </div>
         <div className="home_canvas">

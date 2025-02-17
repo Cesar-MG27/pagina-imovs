@@ -1,6 +1,16 @@
 .about {
-  padding: 75px 75px 300px;
+  padding: 75px 75px 450px;
   position: relative;
+}
+
+.about::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;background: rgb(255,255,255);
+  background: linear-gradient(0deg, var(--puprlegorund) 0%, rgba(232,210,255,0) 100%);
 }
 
 

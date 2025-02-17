@@ -1,3 +1,5 @@
+@import url("/variables.css");
+
 .home__page {
   height: max-content;
   transition: background 0.5s;
@@ -10,30 +12,28 @@ body.dark .home__page {
 .home__content {
   position: relative;
   height: 100vh;
-  padding: 125px 50px 50px 50px;
+  padding: 150px 50px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.home__title,
-.home__description-group {
-  z-index: 1;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    var(--background) 0%,
+    var(--gradientground) 100%
+  );
 }
 
-.home__title{
+.home__title {
   display: flex;
-  justify-content: center;
-  width: 100%;
 }
 .home__content h1 {
-  font-size: 54px;
-  font-weight: 300;
-  line-height: 1.1;
-  text-align: center;
+  font-size: 98px;
+  font-weight: 200;
 }
 .home__content h1 span {
-  text-transform: uppercase;
-  font-size: 98px;
+  position: relative;
+  z-index: 1;
   font-weight: 700;
   background: #7826e7;
   background: linear-gradient(
@@ -50,16 +50,37 @@ body.dark .home__page {
   justify-content: flex-end;
 }
 .home__description-group {
-  max-width: 300px;
+  max-width: 25%;
+  height: max-content;
+  position: relative;
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(131, 131, 131, 0.15);
+  border-right: 1px solid rgba(131, 131, 131, 0.15);
+  padding: 75px 75px 75px 25px;
+  z-index: 1;
+  text-align: right;
+}
+.home__description-group span {
+  margin-bottom: 25px;
+  display: block;
+  background: #7826e7;
+  background: linear-gradient(
+    90deg,
+    rgba(120, 38, 231, 1) 0%,
+    rgba(200, 38, 231, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 14px;
 }
 .home__description p {
   z-index: 1;
-  line-height: 1.3;
+  line-height: 1.5;
   font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 20px;
 }
-.home__description .bold{
+.home__description .bold {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -72,7 +93,7 @@ body.dark .home__page {
   margin: auto;
   height: 100vh;
 }
-.home__video video{
+.home__video video {
   height: auto;
   object-fit: cover;
   border-radius: 150px;

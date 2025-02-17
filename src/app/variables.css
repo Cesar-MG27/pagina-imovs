@@ -5,6 +5,7 @@
     --puprlegorund: #e5dcff;
     --integration__fill: #cfc5ff;
     --integration__stroke: #dad3fa;
+    --gradientground: #e7d9ff;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -15,5 +16,6 @@
       --puprlegorund: #2a1735;
       --integration__fill: #580a85;
       --integration__stroke: #1c0b26;
+      --gradientground: #220134;
     }
   }
