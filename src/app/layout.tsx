@@ -8,40 +8,40 @@ import { createContext, useEffect, useState } from "react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const ThemeContext = createContext({
-  isDarkMode: false,
-  toggleTheme: () => {},
-});
+// export const ThemeContext = createContext({
+//   isDarkMode: false,
+//   toggleTheme: () => {},
+// });
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  // const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Leer la preferencia de tema desde localStorage
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem("theme");
+  //   if (savedTheme === "dark") {
+  //     setIsDarkMode(true);
+  //   }
+  // }, []);
 
-  const toggleTheme = () => {
-    const newTheme = !isDarkMode;
-    setIsDarkMode(newTheme);
-    localStorage.setItem("theme", newTheme ? "dark" : "light");
-  };
+  // const toggleTheme = () => {
+  //   const newTheme = !isDarkMode;
+  //   setIsDarkMode(newTheme);
+  //   localStorage.setItem("theme", newTheme ? "dark" : "light");
+  // };
 
   return (
     <html lang="en" className={montserrat.className}>
-      <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
-        <body className={`layout__container ${isDarkMode ? "dark" : ""}`}>
+      {/* <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}> */}
+        <body className={`layout__container`}>
           <Header />
           <div className={`layout__container`}>{children}</div>
         </body>
-      </ThemeContext.Provider>
+      {/* </ThemeContext.Provider> */}
     </html>
   );
 }
