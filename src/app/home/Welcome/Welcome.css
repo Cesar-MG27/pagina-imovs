@@ -27,24 +27,6 @@ body.dark .home__page {
 .home__title {
   display: flex;
 }
-.home__content h1 {
-  font-size: 98px;
-  font-weight: 200;
-}
-.home__content h1 span {
-  position: relative;
-  z-index: 1;
-  font-weight: 700;
-  background: #7826e7;
-  background: linear-gradient(
-    90deg,
-    rgba(120, 38, 231, 1) 0%,
-    rgba(200, 38, 231, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
 .home__description {
   display: flex;
   justify-content: flex-end;
@@ -54,11 +36,8 @@ body.dark .home__page {
   height: max-content;
   position: relative;
   backdrop-filter: blur(4px);
-  border-bottom: 1px solid rgba(131, 131, 131, 0.15);
-  border-right: 1px solid rgba(131, 131, 131, 0.15);
   padding: 75px 75px 75px 25px;
   z-index: 1;
-  text-align: right;
 }
 .home__description-group span {
   margin-bottom: 25px;
@@ -92,12 +71,17 @@ body.dark .home__page {
   width: calc(100% - 100px);
   margin: auto;
   height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 .home__video video {
   height: auto;
   object-fit: cover;
   border-radius: 150px;
   max-height: 100%;
+  position: relative;
+  right: 0;
 }
 .home_canvas {
   position: absolute;

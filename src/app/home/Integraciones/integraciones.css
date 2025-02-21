@@ -13,6 +13,15 @@
   gap: 2em;
 }
 
+.integrations::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, var(--background) 0%, rgba(232, 210, 255, 0) 100%);
+  bottom: 0;
+}
+
 .integrations .title,
 .integrations .description {
   max-width: 700px;
@@ -23,7 +32,7 @@
   width: 80%;
   position: relative;
   transform: translateX(-22px);
-  /* overflow: hidden; */
+  z-index: 1;
 }
 
 .illustration svg {
@@ -40,9 +49,10 @@
   transform: translateX(-50%);
   top: 27%;
   object-fit: cover;
+  z-index: 11;
 }
 
-.integration__info{
+.integration__info {
   position: relative;
   z-index: 1;
   margin-top: 5em;
@@ -51,7 +61,7 @@
   justify-content: center;
 }
 
-.integration__info .info_group{
+.integration__info .info_group {
   width: 400px;
   padding: 50px;
   border-radius: 50px;
@@ -59,15 +69,15 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  border: 1px solid #cdc7ec
+  border: 1px solid #cdc7ec;
 }
 
-.integration__info .info_group svg{
+.integration__info .info_group svg {
   width: 24px;
   fill: #7826e7;
 }
 
-.integration__info .info_group h1{
+.integration__info .info_group h1 {
   font-size: 18px;
   font-weight: 700;
   background: rgb(120, 38, 231);
@@ -82,13 +92,14 @@
   /* margin-bottom: 5px; */
 }
 
-.integration__info .info_group p{
-    font-weight: 500;
-    color:#5f6575;
-    line-height: 1.3;
+.integration__info .info_group p {
+  font-weight: 500;
+  color: #5f6575;
+  line-height: 1.3;
 }
 
-.co, .cp {
+.co,
+.cp {
   stroke: none;
   fill: var(--integration__fill);
 }
@@ -103,11 +114,47 @@
   fill: #301506;
 }
 
-.cr, .cs, .ct, .cp, .cu, .cv, .cw, .cx, .cy, .cz, .da, .db, .dc, .dd, .de, .df, .dg, .dh, .di, .dj, .dk, .dl, .dm, .dn, .do, .dp, .dq, .dr, .ds, .dt, .du, .dv, .dw, .dx {
+.cr,
+.cs,
+.ct,
+.cp,
+.cu,
+.cv,
+.cw,
+.cx,
+.cy,
+.cz,
+.da,
+.db,
+.dc,
+.dd,
+.de,
+.df,
+.dg,
+.dh,
+.di,
+.dj,
+.dk,
+.dl,
+.dm,
+.dn,
+.do,
+.dp,
+.dq,
+.dr,
+.ds,
+.dt,
+.du,
+.dv,
+.dw,
+.dx {
   stroke-width: 0px;
 }
 
-.cr, .cu, .da, .db {
+.cr,
+.cu,
+.da,
+.db {
   fill-rule: evenodd;
 }
 
@@ -119,7 +166,8 @@
   fill: #c01818;
 }
 
-.cq, .cy {
+.cq,
+.cy {
   fill: none;
 }
 
@@ -157,9 +205,8 @@
 
 .df {
   fill: #7826e7;
-  filter: drop-shadow(0 0 15px #7826e7)
-  drop-shadow(0 0 10px #7826e7)
-  drop-shadow(0 0 5px #7826e7);
+  filter: drop-shadow(0 0 15px #7826e7) drop-shadow(0 0 10px #7826e7)
+    drop-shadow(0 0 5px #7826e7);
 }
 
 .dg {

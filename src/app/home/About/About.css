@@ -1,41 +1,38 @@
 .about {
-  padding: 75px 75px 450px;
+  height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 75px;
+  margin-bottom: 300px;
 }
 
-.about::after{
+.about::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   height: 300px;
-  width: 100%;background: rgb(255,255,255);
-  background: linear-gradient(0deg, var(--puprlegorund) 0%, rgba(232,210,255,0) 100%);
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    var(--puprlegorund) 0%,
+    rgba(232, 210, 255, 0) 100%
+  );
+  transform: translateY(300px);
 }
-
 
 .about__slogan {
   width: 100%;
   border-bottom: 1px solid rgba(145, 127, 150, 0.25);
-  padding: 0 150px 75px 50px;
   line-height: 1.5;
-  font-size: 62px;
-  font-weight: 300;
+  font-size: 68px;
+  font-weight: 400;
+  padding-bottom: 50px;
 }
 
-.about__slogan span{
-  background: rgb(120, 38, 231);
-  background: linear-gradient(
-    90deg,
-    rgb(132, 15, 242) 0%,
-    rgba(200, 38, 231, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.about__slogan figure{
+.about__slogan figure {
   width: 112px;
   position: relative;
   display: inline-block;
@@ -43,22 +40,49 @@
   transform: translateY(-15px);
 }
 
-.about__slogan figure div{
+.about__slogan figure div {
   width: 100% !important;
   height: 100% !important;
 }
 .about__des {
-  padding: 75px 0 0 50px;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1;
+  height: max-content;
 }
-.about__des span{
+
+.about__des .title2{
+  opacity: .5;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
 }
+
+.about__des-paragraphs {
+  width: 40%;
+  height: max-content;
+  position: relative;
+}
+
+.about__titles {
+  position: relative;
+  height: max-content;
+  width: max-content;
+}
+
+.about__des p:nth-of-type(1),
+.about__des .about__title:nth-of-type(1) {
+  position: relative;
+}
+
 .about__des p {
+  position: absolute;
   max-width: 350px;
-  line-height: 1.3;
-  font-weight: 500;
-  margin-left: calc(50% - 100px);
+  font-weight: 400;
+  top: 0;
+  line-height: 1.5;
+}
+
+.about__des .about__title {
+  position: absolute;
+  bottom: 0;
 }

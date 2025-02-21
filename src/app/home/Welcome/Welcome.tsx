@@ -1,4 +1,3 @@
-import Link from "next/link";
 import dynamic from "next/dynamic";
 import "./Welcome.css";
 import SplineComponent from "@splinetool/react-spline";
@@ -44,11 +43,6 @@ export default function Welcome() {
   return (
     <div>
       <div className="home__content">
-        <div className="home__title">
-          <h1>
-            Fábrica de <br /> <span>Software</span>
-          </h1>
-        </div>
         <div className="home__description">
           <div className="home__description-group">
             <span>¡Nos encantaría ayudarte!</span>
@@ -60,6 +54,11 @@ export default function Welcome() {
               obtienen soluciones innovadoras.
             </p>
           </div>
+        </div>
+        <div className="home__title">
+          <h1 className="title2">
+            Fábrica de <br /> <span>Software</span>
+          </h1>
         </div>
         <div className="home_canvas">
           {" "}
