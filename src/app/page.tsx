@@ -8,7 +8,7 @@ import Websites from "@/app/home/Websites/Websites.js";
 import Tiendas from "@/app/home/Tiendas/Tiendas.js";
 import AppsMobiles from "@/app/home/AppsMobiles/AppsMobiles.js";
 import Contact from "@/app/home/Contact/Contact.js";
-
+import Preloader from "@/components/Preloader/Preloader.js";
 import { gsap, useGSAP } from "@/libs/gsapConfig.js";
 
 export default function Home() {
@@ -39,6 +39,7 @@ export default function Home() {
       <Tiendas />
       <AppsMobiles />
       <Contact />
+      <Preloader />
     </div>
   );
 }

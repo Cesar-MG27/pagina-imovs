@@ -336,3 +336,8 @@ video {
   height: auto;
   object-fit: cover;
 }
+
+/* Esta clase se aplica al body para desactivar el scroll */
+.no-scroll {
+  overflow: hidden;
+}

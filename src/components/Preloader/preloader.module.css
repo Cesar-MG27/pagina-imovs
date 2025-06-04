@@ -1,0 +1,74 @@
+.page__pageload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 12;
+}
+
+.background__preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: 0.3s;
+}
+
+.logo {
+  position: fixed;
+  display: block;
+  height: auto;
+  width: 50%;
+  fill: var(--foreground);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.draw {
+  fill: var(--foreground);
+  stroke: var(--foreground);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.letter__o,
+.letter__o_point,
+.letter__i,
+.letter__i_point {
+  opacity: 0;
+}
+
+.letter__i{
+  z-index: 2;
+}
+
+.letter__s,
+.letter__o_point,
+.letter__i {
+  fill: #8338f9;
+  stroke: #8338f9;
+}
+
+.logo__text {
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--background);
+  text-shadow: -1px -1px 0 #8338f9, 1px -1px 0 #8338f9, -1px 1px 0 #8338f9,
+    1px 1px 0 #8338f9, 4px 4px 5px rgba(116, 49, 233, 1);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 2;
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}

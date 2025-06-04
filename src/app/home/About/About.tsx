@@ -220,9 +220,15 @@ export default function About() {
 
       <div className="about__des">
         <div className="about__titles">
-          <h2 className="about__title title2"><span></span>Nosotros</h2>
-          <h2 className="about__title title2"><span></span>Visión</h2>
-          <h2 className="about__title title2"><span></span>Misión</h2>
+          <h2 className="about__title title2">
+            <span></span>Nosotros
+          </h2>
+          <h2 className="about__title title2">
+            <span></span>Visión
+          </h2>
+          <h2 className="about__title title2">
+            <span></span>Misión
+          </h2>
         </div>
         <div className="about__des-paragraphs">
           <p className="about__paragraph">
